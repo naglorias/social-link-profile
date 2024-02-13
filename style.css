@@ -89,8 +89,6 @@ h4 {
   display: block;
   text-align: center;
   margin: 1.77rem auto 1.2rem ;
-/*  margin-top: 1.77rem;
- margin-bottom: 1.2rem; */
 }
 .links-list li {
 list-style: none;
@@ -109,7 +107,10 @@ padding: .7rem 5rem;
   cursor: pointer;
   margin-left: -3rem;
  }
-
+.links-list li button:hover{
+  background-color:var(--primary1);
+  color: var(--neutral3);
+}
 /******** Media Queries *******/
 
 /** Mobile devices size **/
