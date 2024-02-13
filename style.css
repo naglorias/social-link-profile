@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Inter regular";
+  src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter semiBold";
+  src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Inter bold";
+  src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+
+:root {
+  --primary1: hsl(75, 94%, 57%);
+  /* Green  */
+  --neutral1: hsl(0, 0%, 100%);
+  /* White */
+  --neutral2: hsl(0, 0%, 20%);
+  /* Grey */
+  --neutral3: hsl(0, 0%, 12%);
+  /* Dark Grey */
+  --neutral4: hsl(0, 0%, 8%);
+  /* Off Black */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--neutral4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.profile-card {
+  width: 30%;
+  height: auto;
+  background-color: var(--neutral3);
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  border-radius: 12px;
+}
+
+.info {
+  flex: 1;
+  text-align: center;
+}
+.info img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-top: 1.77rem;
+}
+h3,
+quote {
+  color: var(--neutral1);
+}
+h3 {
+  font-family: "Inter bold";
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+quote {
+  font-family: "Inter regular";
+}
+h4 {
+  color: var(--primary1);
+  font-family: "Inter semiBold";
+  margin-bottom: 2.44rem;
+}
+.links {
+  flex: 3;
+}
+.links-list {
+  width: 28rem;
+  display: block;
+  text-align: center;
+  margin: 1.77rem auto 1.2rem ;
+/*  margin-top: 1.77rem;
+ margin-bottom: 1.2rem; */
+}
+.links-list li {
+list-style: none;
+padding: .7rem 5rem;
+}
+ .links-list li button{
+  width: 23rem;
+  background-color:var(--neutral2);
+  color: var(--neutral1);
+  font-family: 'Inter semiBold';
+  text-align: center;
+  padding: 1.1rem;
+  border:none;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-left: -3rem;
+ }
+
+/******** Media Queries *******/
+
+/** Mobile devices size **/
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .profile-card{
+    width: 88%;
+  }
+  .links-list li button{
+    width: 19rem;
+    margin-left: -6rem;
+  }
+}
+
+/** Tablet devices size **/
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .profile-card{
+    width: 55%;
+  }
+}
+
+/** Laptop devices size **/
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .profile-card{
+    width: 55%;
+  }
+}
+
